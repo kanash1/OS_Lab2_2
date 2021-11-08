@@ -76,6 +76,7 @@ void Writer::Close() {
             CloseHandle(file_handle);
         }
         file_handle = INVALID_HANDLE_VALUE;
+        map_handle = nullptr;
         map_address = nullptr;
         std::cout << "Projected file closed\n";
     }
